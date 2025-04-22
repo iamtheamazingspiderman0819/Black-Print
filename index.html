@@ -10,9 +10,9 @@
     <div class="login-container">
         <div class="login-box">
             <h1>LOGIN NOW</h1>
-            <form>
-                <input type="email" placeholder="enter your email" required>
-                <input type="password" placeholder="enter your password" required>
+            <form id="loginForm">
+                <input type="email" id="email" placeholder="enter your email" required>
+                <input type="password" id="password" placeholder="enter your password" required>
                 <button type="submit">Login Now</button>
             </form>
             <p class="register-text">
@@ -20,5 +20,10 @@
             </p>
         </div>
     </div>
+
+    <!-- Firebase SDK -->
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js"></script>
+    <script type="module" src="index.js"></script>
 </body>
 </html>
