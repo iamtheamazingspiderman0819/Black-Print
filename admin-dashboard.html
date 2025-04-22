@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="admin-dashboard.css">
+  <!-- Add Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+      <div class="sidebar-header">
+        <h2>Black Print</h2>
+      </div>
+      <div class="profile-info">
+        <div class="profile-pic">
+          <i class="fas fa-user-circle"></i>
+        </div>
+        <div class="profile-details">
+          <h3 id="userName">Admin</h3>
+          <p id="userEmail">admin@email.com</p>
+        </div>
+      </div>
+      <ul class="nav-links">
+        <li class="active">
+          <a href="#products"><i class="fas fa-box"></i> <span>Products</span></a>
+        </li>
+        <li>
+          <a href="#inventory"><i class="fas fa-warehouse"></i> <span>Inventory</span></a>
+        </li>
+        <li>
+          <a href="#history"><i class="fas fa-history"></i> <span>History</span></a>
+        </li>
+        <li>
+          <a href="#settings"><i class="fas fa-cog"></i> <span>Settings</span></a>
+        </li>
+        <li class="logout">
+          <a href="#" id="logoutBtn"><i class="fas fa-sign-out-alt"></i> <span>Log out</span></a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <div class="top-bar">
+        <h1>Dashboard</h1>
+      </div>
+      
+      <div class="content-area">
+        <div id="welcome-message">
+          <h2>Welcome, <span id="userName">Admin</span>!</h2>
+          <p>Select an option from the navigation menu to get started.</p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Firebase SDK -->
+  <script type="module" src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js"></script>
+  <script type="module" src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js"></script>
+  <script type="module" src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js"></script>
+  <script type="module" src="admin-dashboard.js"></script>
+</body>
+</html>
